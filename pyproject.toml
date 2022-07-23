@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sample-package"
+version = "0.1.0"
+description = "Sample package demonstrating the usage of cython with poetry."
+authors = ["Yann LG <yann.leguilly@gmail.com>"]
+license = "Apache-2.0 license"
+build = "build.py"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Cython = "^0.29.30"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+isort = "^5.10.1"
+autoflake = "^1.4"
+mypy = "^0.971"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "setuptools>=62.6.0", "Cython>=0.29.30"]
+build-backend = "poetry.core.masonry.api"
